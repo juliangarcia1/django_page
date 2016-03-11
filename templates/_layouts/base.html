@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+</head>
+<body>
+<div class="container">
+</div>
+<div class="head-title">{% block title %} {% endblock %} </div>
+<div class="jumbotron text-center">
+   <h1> Blog list</h1>
+    <p> This is our moto</p>
+    <form action="" class="form-inline"><input type="email" class="form-control" size="50" placeholder="EmailAddress...">
+    <button type="button"  class="btn btn-danger">Subscribe</button>
+    </form>
+    {% block header %} {% endblock %}
+</div>
+{% block home-container %}
+{% endblock %}
+</div>
+<div class="nav-bar"></div>
+{% block content %}
+
+{% endblock %}
+{% block portafolio%}
+
+{% endblock %}
+
+</body>
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" >
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</html>

@@ -1,0 +1,30 @@
+{% extends '_layouts/base.html' %}
+
+{% block title %} <h2>Julian's page</h2> {% endblock %}
+{% block header%}
+
+{% endblock %}
+
+{% block portafolio%}
+
+    <!-- Container (Portfolio Section) -->
+     <div class="container-fluid text-center bg-grey" style="padding:60px;background-color:#f6f6f6">
+        <h2></h2><br>
+        <h4></h4>
+            <div class="row text-center">
+                {% for entrada in entradas %}
+                    <a href="{% url 'blog:entrada_detalle' entrada.pk %}">
+                        <div class="col-sm-4">
+                            <div class="thumbnail">
+                                <p>{{ entrada.contenido | truncatechars:150}}</p>
+                                    <p><strong><h3>{{ entrada.titulo }}</h3></strong></p>
+                                    <p>{{ entrada.fecha }} by {{ entrada.autor }}</p>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+    </div>
+ {% include "pagination.html" with page=entradas %}
+
+{% endblock %}

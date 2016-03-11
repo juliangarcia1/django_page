@@ -1,0 +1,28 @@
+{% extends '_layouts/base.html' %}
+
+{% block title %} <h2>Julian's page</h2> {% endblock %}
+{% block header%}
+<h2> Blog list</h2>
+{% endblock %}
+
+
+
+{% block content %}
+<table class="table table-striped table-hover">
+	<thead>
+		<tr>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+        <a href=" {% url 'blog:entrada_detalle' entrada.pk %}">
+            <h3> {{ entrada.titulo }}</h3>
+        </a>
+		<tr>
+			<td>
+                <h5> {{ entrada.fecha }}  by {{ entrada.autor }} </h5>
+                <p> {{  entrada.contenido }}</p>
+            </td>
+		</tr>
+</table>
+{% endblock %}
