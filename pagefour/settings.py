@@ -81,6 +81,7 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 
 
 # Static files (CSS, JavaScript, Images)
