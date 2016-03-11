@@ -64,7 +64,7 @@ DATABASES = {
         'NAME': 'pagefour',
         'USER': 'julian',
         'PASSWORD': 'JuliaN',
-        'HOST': 'localhost',
+        'HOST': '',
         'PORT': '',
     }
 }
