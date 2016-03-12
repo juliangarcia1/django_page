@@ -68,7 +68,7 @@ DATABASES['default']=dj_database_url.config()
 #        'HOST': '',
 #        'PORT': '',
 #    }
-}
+#}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
