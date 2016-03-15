@@ -60,17 +60,17 @@ WSGI_APPLICATION = 'pagefour.wsgi.application'
 import dj_database_url
 DATABASES = {}
 DATABASES['default']=dj_database_url.config()
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#        'NAME': 'pagefour',
-#        'USER': 'julian',
-#        'PASSWORD': 'JuliaN',
-#        'HOST': '',
-#        'PORT': '',
-#    }
-#}
-
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'pagefour',
+#         'USER': 'julian',
+#         'PASSWORD': 'JuliaN',
+#         'HOST': '',
+#         'PORT': '',
+#     }
+# }
+#
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
