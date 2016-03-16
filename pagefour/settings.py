@@ -59,7 +59,7 @@ WSGI_APPLICATION = 'pagefour.wsgi.application'
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 import dj_database_url
 DATABASES = {}
-DATABASES['default']=dj_database_url.config()
+DATABASES['default']=dj_database_url.config( default ='postgres://julian:JuliaN@localhost/pagefour')#dj_database_url.config(default=os.getenv('DATABASE_URL'))#
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
