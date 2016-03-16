@@ -9,7 +9,13 @@
 <body>
 <div class="container">
 </div>
-<div class="head-title">{% block title %} {% endblock %} </div>
+<div class="head-title"><h3>webpage</h3>{% comment %}{% block title %} {% endblock %} {% endcomment %}</div>
+
+<div class="btn-group btn-group-lg" style="position:relative;width: 50%; align-content: center; alignment: center;">
+    <a href="{% url 'home' %}" class="btn btn-default"> Inicio</a>
+    <a href="{% url 'blog:entrada_lista' %}" class="btn btn-default"> Articulos</a>
+</div>
+
 <div class="jumbotron text-center">
    <h1> Blog list</h1>
     <p> This is our moto</p>
@@ -37,3 +43,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </html>
+
+
+
+
+
+
